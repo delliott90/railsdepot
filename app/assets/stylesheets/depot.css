@@ -156,3 +156,8 @@
 	font-size: smaller;
 	color: #fff;
 }
+
+/* formatting for "Add to Cart" button */
+#store .entry form, #store .entry form div {
+	display: inline;
+}
