@@ -37500,3 +37500,1304 @@ Served asset /wd4d.jpg - 304 Not Modified (0ms)
 
 Started GET "/assets/ruby.jpg" for 127.0.0.1 at Fri Aug 31 15:26:43 -0300 2012
 Served asset /ruby.jpg - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CombineItemsInCart (20120831142927)
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mLineItem Load (0.1ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE (quantity>1)[0m
+  [1m[35mSQL (291.5ms)[0m  INSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)  [["cart_id", 17], ["created_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00], ["product_id", 1], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["cart_id", 17], ["created_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00], ["product_id", 1], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)  [["cart_id", 17], ["created_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00], ["product_id", 1], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["cart_id", 17], ["created_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00], ["product_id", 1], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00]]
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "line_items" WHERE "line_items"."id" = ?  [["id", 150]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["cart_id", 17], ["created_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00], ["product_id", 2], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)  [["cart_id", 17], ["created_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00], ["product_id", 2], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["cart_id", 17], ["created_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00], ["product_id", 2], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)  [["cart_id", 17], ["created_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00], ["product_id", 2], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["cart_id", 17], ["created_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00], ["product_id", 2], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)  [["cart_id", 17], ["created_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00], ["product_id", 2], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["cart_id", 17], ["created_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00], ["product_id", 2], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)  [["cart_id", 17], ["created_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00], ["product_id", 2], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["cart_id", 17], ["created_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00], ["product_id", 2], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00]]
+  [1m[35mSQL (0.0ms)[0m  DELETE FROM "line_items" WHERE "line_items"."id" = ?  [["id", 151]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["cart_id", 17], ["created_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00], ["product_id", 3], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)  [["cart_id", 17], ["created_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00], ["product_id", 3], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["cart_id", 17], ["created_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00], ["product_id", 3], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00]]
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)  [["cart_id", 17], ["created_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00], ["product_id", 3], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["cart_id", 17], ["created_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00], ["product_id", 3], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00]]
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "line_items" WHERE "line_items"."id" = ?  [["id", 152]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["cart_id", 18], ["created_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00], ["product_id", 2], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)  [["cart_id", 18], ["created_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00], ["product_id", 2], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["cart_id", 18], ["created_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00], ["product_id", 2], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)  [["cart_id", 18], ["created_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00], ["product_id", 2], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["cart_id", 18], ["created_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00], ["product_id", 2], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)  [["cart_id", 18], ["created_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00], ["product_id", 2], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["cart_id", 18], ["created_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00], ["product_id", 2], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)  [["cart_id", 18], ["created_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00], ["product_id", 2], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00]]
+  [1m[36mSQL (0.0ms)[0m  [1mDELETE FROM "line_items" WHERE "line_items"."id" = ?[0m  [["id", 153]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)  [["cart_id", 19], ["created_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00], ["product_id", 2], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["cart_id", 19], ["created_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00], ["product_id", 2], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00]]
+  [1m[35mSQL (0.0ms)[0m  DELETE FROM "line_items" WHERE "line_items"."id" = ?  [["id", 154]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["cart_id", 19], ["created_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00], ["product_id", 5], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)  [["cart_id", 19], ["created_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00], ["product_id", 5], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["cart_id", 19], ["created_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00], ["product_id", 5], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)  [["cart_id", 19], ["created_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00], ["product_id", 5], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["cart_id", 19], ["created_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00], ["product_id", 5], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)  [["cart_id", 19], ["created_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00], ["product_id", 5], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["cart_id", 19], ["created_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00], ["product_id", 5], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)  [["cart_id", 19], ["created_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00], ["product_id", 5], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["cart_id", 19], ["created_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00], ["product_id", 5], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)  [["cart_id", 19], ["created_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00], ["product_id", 5], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00]]
+  [1m[36mSQL (0.0ms)[0m  [1mDELETE FROM "line_items" WHERE "line_items"."id" = ?[0m  [["id", 155]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)  [["cart_id", 19], ["created_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00], ["product_id", 6], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["cart_id", 19], ["created_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00], ["product_id", 6], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)  [["cart_id", 19], ["created_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00], ["product_id", 6], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00]]
+  [1m[36mSQL (0.0ms)[0m  [1mDELETE FROM "line_items" WHERE "line_items"."id" = ?[0m  [["id", 156]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)  [["cart_id", 19], ["created_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00], ["product_id", 11], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["cart_id", 19], ["created_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00], ["product_id", 11], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)  [["cart_id", 19], ["created_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00], ["product_id", 11], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["cart_id", 19], ["created_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00], ["product_id", 11], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)  [["cart_id", 19], ["created_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00], ["product_id", 11], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00]]
+  [1m[36mSQL (0.0ms)[0m  [1mDELETE FROM "line_items" WHERE "line_items"."id" = ?[0m  [["id", 157]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)  [["cart_id", 26], ["created_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00], ["product_id", 11], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["cart_id", 26], ["created_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00], ["product_id", 11], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00]]
+  [1m[35mSQL (0.0ms)[0m  DELETE FROM "line_items" WHERE "line_items"."id" = ?  [["id", 167]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["cart_id", 26], ["created_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00], ["product_id", 12], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)  [["cart_id", 26], ["created_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00], ["product_id", 12], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00]]
+  [1m[36mSQL (0.0ms)[0m  [1mDELETE FROM "line_items" WHERE "line_items"."id" = ?[0m  [["id", 168]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)  [["cart_id", 28], ["created_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00], ["product_id", 11], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["cart_id", 28], ["created_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00], ["product_id", 11], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)  [["cart_id", 28], ["created_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00], ["product_id", 11], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["cart_id", 28], ["created_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00], ["product_id", 11], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00]]
+  [1m[35mSQL (0.0ms)[0m  DELETE FROM "line_items" WHERE "line_items"."id" = ?  [["id", 170]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["cart_id", 29], ["created_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00], ["product_id", 11], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)  [["cart_id", 29], ["created_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00], ["product_id", 11], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["cart_id", 29], ["created_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00], ["product_id", 11], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)  [["cart_id", 29], ["created_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00], ["product_id", 11], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["cart_id", 29], ["created_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00], ["product_id", 11], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)  [["cart_id", 29], ["created_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00], ["product_id", 11], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["cart_id", 29], ["created_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00], ["product_id", 11], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)  [["cart_id", 29], ["created_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00], ["product_id", 11], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 18:40:12 UTC +00:00]]
+  [1m[36mSQL (0.0ms)[0m  [1mDELETE FROM "line_items" WHERE "line_items"."id" = ?[0m  [["id", 173]]
+  [1m[35m (0.2ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20120831142927'
+  [1m[36m (3.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("carts")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("line_items")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("products")
+
+
+Started GET "/" for 127.0.0.1 at Fri Aug 31 16:10:29 -0300 2012
+Processing by StoreController#index as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY title[0m
+  Rendered store/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 26ms (Views: 12.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Fri Aug 31 16:10:29 -0300 2012
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/line_items.css?body=1" for 127.0.0.1 at Fri Aug 31 16:10:29 -0300 2012
+Served asset /line_items.css - 200 OK (0ms)
+
+
+Started GET "/assets/carts.css?body=1" for 127.0.0.1 at Fri Aug 31 16:10:29 -0300 2012
+Served asset /carts.css - 200 OK (0ms)
+
+
+Started GET "/assets/depot.css?body=1" for 127.0.0.1 at Fri Aug 31 16:10:29 -0300 2012
+Served asset /depot.css - 200 OK (0ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at Fri Aug 31 16:10:29 -0300 2012
+Served asset /products.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Fri Aug 31 16:10:29 -0300 2012
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/store.css?body=1" for 127.0.0.1 at Fri Aug 31 16:10:29 -0300 2012
+Served asset /store.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Fri Aug 31 16:10:29 -0300 2012
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri Aug 31 16:10:29 -0300 2012
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/carts.js?body=1" for 127.0.0.1 at Fri Aug 31 16:10:29 -0300 2012
+Served asset /carts.js - 200 OK (0ms)
+
+
+Started GET "/assets/line_items.js?body=1" for 127.0.0.1 at Fri Aug 31 16:10:29 -0300 2012
+Served asset /line_items.js - 200 OK (0ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at Fri Aug 31 16:10:29 -0300 2012
+Served asset /products.js - 200 OK (0ms)
+
+
+Started GET "/assets/store.js?body=1" for 127.0.0.1 at Fri Aug 31 16:10:29 -0300 2012
+Served asset /store.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Fri Aug 31 16:10:29 -0300 2012
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at Fri Aug 31 16:10:29 -0300 2012
+Served asset /logo.png - 200 OK (0ms)
+
+
+Started GET "/assets/rtp.jpg" for 127.0.0.1 at Fri Aug 31 16:10:29 -0300 2012
+Served asset /rtp.jpg - 200 OK (0ms)
+
+
+Started GET "/assets/ruby.jpg" for 127.0.0.1 at Fri Aug 31 16:10:29 -0300 2012
+Served asset /ruby.jpg - 200 OK (0ms)
+
+
+Started GET "/assets/wd4d.jpg" for 127.0.0.1 at Fri Aug 31 16:10:29 -0300 2012
+Served asset /wd4d.jpg - 200 OK (0ms)
+
+
+Started POST "/line_items?product_id=12" for 127.0.0.1 at Fri Aug 31 16:10:49 -0300 2012
+Processing by LineItemsController#create as HTML
+  Parameters: {"product_id"=>"12", "authenticity_token"=>"10DIUgkZSeluD3qQ5qsjivxyZzhxnLb+6Mc/A/gxoAo="}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "carts" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Fri, 31 Aug 2012 19:10:49 UTC +00:00], ["updated_at", Fri, 31 Aug 2012 19:10:49 UTC +00:00]]
+  [1m[35m (55.5ms)[0m  commit transaction
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? ORDER BY title LIMIT 1[0m  [["id", "12"]]
+  [1m[35mLineItem Load (0.1ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = 30 AND "line_items"."product_id" = 12 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)  [["cart_id", 30], ["created_at", Fri, 31 Aug 2012 19:10:49 UTC +00:00], ["product_id", 12], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 19:10:49 UTC +00:00]]
+  [1m[36m (3.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mCart Load (0.1ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = 30 LIMIT 1
+Redirected to http://localhost:3000/carts/30
+Completed 302 Found in 133ms (ActiveRecord: 60.6ms)
+
+
+Started GET "/carts/30" for 127.0.0.1 at Fri Aug 31 16:10:49 -0300 2012
+Processing by CartsController#show as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mCart Load (0.2ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1[0m  [["id", "30"]]
+  [1m[35mLineItem Load (0.2ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = 30
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = 12 ORDER BY title LIMIT 1[0m
+  Rendered carts/show.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/line_items?product_id=11" for 127.0.0.1 at Fri Aug 31 16:11:10 -0300 2012
+Processing by LineItemsController#create as HTML
+  Parameters: {"product_id"=>"11", "authenticity_token"=>"10DIUgkZSeluD3qQ5qsjivxyZzhxnLb+6Mc/A/gxoAo="}
+  [1m[35mCart Load (0.1ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1  [["id", 30]]
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? ORDER BY title LIMIT 1[0m  [["id", "11"]]
+  [1m[35mLineItem Load (0.2ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = 30 AND "line_items"."product_id" = 11 LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)  [["cart_id", 30], ["created_at", Fri, 31 Aug 2012 19:11:10 UTC +00:00], ["product_id", 11], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 19:11:10 UTC +00:00]]
+  [1m[36m (56.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mCart Load (0.2ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = 30 LIMIT 1
+Redirected to http://localhost:3000/carts/30
+Completed 302 Found in 68ms (ActiveRecord: 58.0ms)
+
+
+Started GET "/carts/30" for 127.0.0.1 at Fri Aug 31 16:11:10 -0300 2012
+Processing by CartsController#show as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mCart Load (0.1ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1[0m  [["id", "30"]]
+  [1m[35mLineItem Load (0.2ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = 30
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = 12 ORDER BY title LIMIT 1[0m
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = 11 ORDER BY title LIMIT 1
+  Rendered carts/show.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 0.5ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateProducts (20120828194707)
+Migrating to CreateCarts (20120830140054)
+Migrating to CreateLineItems (20120830141606)
+Migrating to AddQuantityToLineItem (20120831135814)
+Migrating to CombineItemsInCart (20120831142927)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mCart Load (0.1ms)[0m  SELECT "carts".* FROM "carts" 
+  [1m[36m (0.1ms)[0m  [1mSELECT SUM("line_items"."quantity") AS sum_quantity, product_id AS product_id FROM "line_items" WHERE "line_items"."cart_id" = 1 GROUP BY product_id[0m
+  [1m[35m (0.1ms)[0m  SELECT SUM("line_items"."quantity") AS sum_quantity, product_id AS product_id FROM "line_items" WHERE "line_items"."cart_id" = 2 GROUP BY product_id
+  [1m[36m (0.1ms)[0m  [1mSELECT SUM("line_items"."quantity") AS sum_quantity, product_id AS product_id FROM "line_items" WHERE "line_items"."cart_id" = 3 GROUP BY product_id[0m
+  [1m[35m (0.1ms)[0m  SELECT SUM("line_items"."quantity") AS sum_quantity, product_id AS product_id FROM "line_items" WHERE "line_items"."cart_id" = 4 GROUP BY product_id
+  [1m[36m (0.1ms)[0m  [1mSELECT SUM("line_items"."quantity") AS sum_quantity, product_id AS product_id FROM "line_items" WHERE "line_items"."cart_id" = 5 GROUP BY product_id[0m
+  [1m[35m (0.1ms)[0m  SELECT SUM("line_items"."quantity") AS sum_quantity, product_id AS product_id FROM "line_items" WHERE "line_items"."cart_id" = 6 GROUP BY product_id
+  [1m[36m (0.1ms)[0m  [1mSELECT SUM("line_items"."quantity") AS sum_quantity, product_id AS product_id FROM "line_items" WHERE "line_items"."cart_id" = 7 GROUP BY product_id[0m
+  [1m[35m (0.1ms)[0m  SELECT SUM("line_items"."quantity") AS sum_quantity, product_id AS product_id FROM "line_items" WHERE "line_items"."cart_id" = 8 GROUP BY product_id
+  [1m[36m (0.2ms)[0m  [1mSELECT SUM("line_items"."quantity") AS sum_quantity, product_id AS product_id FROM "line_items" WHERE "line_items"."cart_id" = 9 GROUP BY product_id[0m
+  [1m[35m (0.2ms)[0m  SELECT SUM("line_items"."quantity") AS sum_quantity, product_id AS product_id FROM "line_items" WHERE "line_items"."cart_id" = 10 GROUP BY product_id
+  [1m[36m (0.1ms)[0m  [1mSELECT SUM("line_items"."quantity") AS sum_quantity, product_id AS product_id FROM "line_items" WHERE "line_items"."cart_id" = 11 GROUP BY product_id[0m
+  [1m[35m (0.1ms)[0m  SELECT SUM("line_items"."quantity") AS sum_quantity, product_id AS product_id FROM "line_items" WHERE "line_items"."cart_id" = 12 GROUP BY product_id
+  [1m[36m (0.1ms)[0m  [1mSELECT SUM("line_items"."quantity") AS sum_quantity, product_id AS product_id FROM "line_items" WHERE "line_items"."cart_id" = 13 GROUP BY product_id[0m
+  [1m[35m (0.1ms)[0m  SELECT SUM("line_items"."quantity") AS sum_quantity, product_id AS product_id FROM "line_items" WHERE "line_items"."cart_id" = 14 GROUP BY product_id
+  [1m[36m (0.1ms)[0m  [1mSELECT SUM("line_items"."quantity") AS sum_quantity, product_id AS product_id FROM "line_items" WHERE "line_items"."cart_id" = 15 GROUP BY product_id[0m
+  [1m[35m (0.1ms)[0m  SELECT SUM("line_items"."quantity") AS sum_quantity, product_id AS product_id FROM "line_items" WHERE "line_items"."cart_id" = 16 GROUP BY product_id
+  [1m[36m (0.1ms)[0m  [1mSELECT SUM("line_items"."quantity") AS sum_quantity, product_id AS product_id FROM "line_items" WHERE "line_items"."cart_id" = 17 GROUP BY product_id[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "line_items" WHERE "line_items"."cart_id" = 17 AND "line_items"."product_id" = 1
+  [1m[36mSQL (71.9ms)[0m  [1mINSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["cart_id", 17], ["created_at", Fri, 31 Aug 2012 19:12:52 UTC +00:00], ["product_id", 1], ["quantity", 4], ["updated_at", Fri, 31 Aug 2012 19:12:52 UTC +00:00]]
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "line_items" WHERE "line_items"."cart_id" = 17 AND "line_items"."product_id" = 2
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["cart_id", 17], ["created_at", Fri, 31 Aug 2012 19:12:52 UTC +00:00], ["product_id", 2], ["quantity", 9], ["updated_at", Fri, 31 Aug 2012 19:12:52 UTC +00:00]]
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "line_items" WHERE "line_items"."cart_id" = 17 AND "line_items"."product_id" = 3
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["cart_id", 17], ["created_at", Fri, 31 Aug 2012 19:12:52 UTC +00:00], ["product_id", 3], ["quantity", 5], ["updated_at", Fri, 31 Aug 2012 19:12:52 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("line_items"."quantity") AS sum_quantity, product_id AS product_id FROM "line_items" WHERE "line_items"."cart_id" = 18 GROUP BY product_id
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "line_items" WHERE "line_items"."cart_id" = 18 AND "line_items"."product_id" = 2[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)  [["cart_id", 18], ["created_at", Fri, 31 Aug 2012 19:12:52 UTC +00:00], ["product_id", 2], ["quantity", 8], ["updated_at", Fri, 31 Aug 2012 19:12:52 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mSELECT SUM("line_items"."quantity") AS sum_quantity, product_id AS product_id FROM "line_items" WHERE "line_items"."cart_id" = 19 GROUP BY product_id[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "line_items" WHERE "line_items"."cart_id" = 19 AND "line_items"."product_id" = 2
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["cart_id", 19], ["created_at", Fri, 31 Aug 2012 19:12:52 UTC +00:00], ["product_id", 2], ["quantity", 2], ["updated_at", Fri, 31 Aug 2012 19:12:52 UTC +00:00]]
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "line_items" WHERE "line_items"."cart_id" = 19 AND "line_items"."product_id" = 5
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["cart_id", 19], ["created_at", Fri, 31 Aug 2012 19:12:52 UTC +00:00], ["product_id", 5], ["quantity", 10], ["updated_at", Fri, 31 Aug 2012 19:12:52 UTC +00:00]]
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "line_items" WHERE "line_items"."cart_id" = 19 AND "line_items"."product_id" = 6
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["cart_id", 19], ["created_at", Fri, 31 Aug 2012 19:12:52 UTC +00:00], ["product_id", 6], ["quantity", 3], ["updated_at", Fri, 31 Aug 2012 19:12:52 UTC +00:00]]
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "line_items" WHERE "line_items"."cart_id" = 19 AND "line_items"."product_id" = 11
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["cart_id", 19], ["created_at", Fri, 31 Aug 2012 19:12:52 UTC +00:00], ["product_id", 11], ["quantity", 5], ["updated_at", Fri, 31 Aug 2012 19:12:52 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("line_items"."quantity") AS sum_quantity, product_id AS product_id FROM "line_items" WHERE "line_items"."cart_id" = 22 GROUP BY product_id
+  [1m[36m (0.1ms)[0m  [1mSELECT SUM("line_items"."quantity") AS sum_quantity, product_id AS product_id FROM "line_items" WHERE "line_items"."cart_id" = 26 GROUP BY product_id[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "line_items" WHERE "line_items"."cart_id" = 26 AND "line_items"."product_id" = 11
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["cart_id", 26], ["created_at", Fri, 31 Aug 2012 19:12:52 UTC +00:00], ["product_id", 11], ["quantity", 2], ["updated_at", Fri, 31 Aug 2012 19:12:52 UTC +00:00]]
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "line_items" WHERE "line_items"."cart_id" = 26 AND "line_items"."product_id" = 12
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["cart_id", 26], ["created_at", Fri, 31 Aug 2012 19:12:52 UTC +00:00], ["product_id", 12], ["quantity", 2], ["updated_at", Fri, 31 Aug 2012 19:12:52 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("line_items"."quantity") AS sum_quantity, product_id AS product_id FROM "line_items" WHERE "line_items"."cart_id" = 28 GROUP BY product_id
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "line_items" WHERE "line_items"."cart_id" = 28 AND "line_items"."product_id" = 11[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)  [["cart_id", 28], ["created_at", Fri, 31 Aug 2012 19:12:52 UTC +00:00], ["product_id", 11], ["quantity", 4], ["updated_at", Fri, 31 Aug 2012 19:12:52 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mSELECT SUM("line_items"."quantity") AS sum_quantity, product_id AS product_id FROM "line_items" WHERE "line_items"."cart_id" = 29 GROUP BY product_id[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "line_items" WHERE "line_items"."cart_id" = 29 AND "line_items"."product_id" = 11
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["cart_id", 29], ["created_at", Fri, 31 Aug 2012 19:12:52 UTC +00:00], ["product_id", 11], ["quantity", 8], ["updated_at", Fri, 31 Aug 2012 19:12:52 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  SELECT SUM("line_items"."quantity") AS sum_quantity, product_id AS product_id FROM "line_items" WHERE "line_items"."cart_id" = 30 GROUP BY product_id
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120831142927')[0m
+  [1m[35m (3.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("carts")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("line_items")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("products")[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (57.6ms)[0m  [1mCREATE TABLE "carts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (2.2ms)[0m  CREATE TABLE "line_items" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "product_id" integer, "cart_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "quantity" integer DEFAULT 1) 
+  [1m[36m (2.5ms)[0m  [1mCREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "image_url" varchar(255), "price" decimal(8,2), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (2.5ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (2.0ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (3.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120831142927')
+  [1m[36m (2.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120828194707')[0m
+  [1m[35m (2.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120830140054')
+  [1m[36m (1.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120830141606')[0m
+  [1m[35m (3.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120831135814')
+
+
+Started GET "/" for 127.0.0.1 at Fri Aug 31 16:24:31 -0300 2012
+Processing by StoreController#index as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY title[0m
+  Rendered store/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 70ms (Views: 10.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/depot.css?body=1" for 127.0.0.1 at Fri Aug 31 16:24:31 -0300 2012
+Served asset /depot.css - 304 Not Modified (0ms)
+
+
+Started POST "/line_items?product_id=11" for 127.0.0.1 at Fri Aug 31 16:24:33 -0300 2012
+Processing by LineItemsController#create as HTML
+  Parameters: {"product_id"=>"11", "authenticity_token"=>"10DIUgkZSeluD3qQ5qsjivxyZzhxnLb+6Mc/A/gxoAo="}
+  [1m[35mCart Load (0.1ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1  [["id", 30]]
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? ORDER BY title LIMIT 1[0m  [["id", "11"]]
+  [1m[35mLineItem Load (0.1ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = 30 AND "line_items"."product_id" = 11 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  UPDATE "line_items" SET "updated_at" = '2012-08-31 19:24:33.621642', "quantity" = 2 WHERE "line_items"."id" = 237
+  [1m[36m (54.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mCart Load (0.1ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = 30 LIMIT 1
+Redirected to http://localhost:3000/carts/30
+Completed 302 Found in 81ms (ActiveRecord: 55.7ms)
+
+
+Started GET "/carts/30" for 127.0.0.1 at Fri Aug 31 16:24:33 -0300 2012
+Processing by CartsController#show as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mCart Load (0.1ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1[0m  [["id", "30"]]
+  [1m[35mLineItem Load (0.2ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = 30
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = 12 ORDER BY title LIMIT 1[0m
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = 11 ORDER BY title LIMIT 1
+  Rendered carts/show.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 17ms (Views: 14.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/depot.css?body=1" for 127.0.0.1 at Fri Aug 31 16:24:33 -0300 2012
+Served asset /depot.css - 304 Not Modified (0ms)
+
+
+Started POST "/carts/30" for 127.0.0.1 at Fri Aug 31 16:24:36 -0300 2012
+
+ActionController::RoutingError (No route matches [POST] "/carts/30"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started POST "/carts/30" for 127.0.0.1 at Fri Aug 31 16:24:54 -0300 2012
+
+ActionController::RoutingError (No route matches [POST] "/carts/30"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started DELETE "/carts/30" for 127.0.0.1 at Fri Aug 31 16:25:02 -0300 2012
+Processing by CartsController#destroy as HTML
+  Parameters: {"id"=>"30", "authenticity_token"=>"10DIUgkZSeluD3qQ5qsjivxyZzhxnLb+6Mc/A/gxoAo="}
+  [1m[36mCart Load (0.1ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1[0m  [["id", "30"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mLineItem Load (0.1ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = 30[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "line_items" WHERE "line_items"."id" = ?  [["id", 236]]
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "line_items" WHERE "line_items"."id" = ?[0m  [["id", 237]]
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "carts" WHERE "carts"."id" = ?  [["id", 30]]
+  [1m[36m (121.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 129ms (ActiveRecord: 122.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Aug 31 16:25:02 -0300 2012
+Processing by StoreController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" ORDER BY title
+  Rendered store/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/depot.css?body=1" for 127.0.0.1 at Fri Aug 31 16:25:02 -0300 2012
+Served asset /depot.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Aug 31 16:25:05 -0300 2012
+Processing by StoreController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY title[0m
+  Rendered store/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/depot.css?body=1" for 127.0.0.1 at Fri Aug 31 16:25:05 -0300 2012
+Served asset /depot.css - 304 Not Modified (0ms)
+
+
+Started POST "/line_items?product_id=12" for 127.0.0.1 at Fri Aug 31 16:25:09 -0300 2012
+Processing by LineItemsController#create as HTML
+  Parameters: {"product_id"=>"12", "authenticity_token"=>"10DIUgkZSeluD3qQ5qsjivxyZzhxnLb+6Mc/A/gxoAo="}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "carts" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Fri, 31 Aug 2012 19:25:09 UTC +00:00], ["updated_at", Fri, 31 Aug 2012 19:25:09 UTC +00:00]]
+  [1m[35m (49.1ms)[0m  commit transaction
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? ORDER BY title LIMIT 1[0m  [["id", "12"]]
+  [1m[35mLineItem Load (0.2ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = 31 AND "line_items"."product_id" = 12 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)  [["cart_id", 31], ["created_at", Fri, 31 Aug 2012 19:25:09 UTC +00:00], ["product_id", 12], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 19:25:09 UTC +00:00]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mCart Load (0.2ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = 31 LIMIT 1
+Redirected to http://localhost:3000/carts/31
+Completed 302 Found in 68ms (ActiveRecord: 53.6ms)
+
+
+Started GET "/carts/31" for 127.0.0.1 at Fri Aug 31 16:25:09 -0300 2012
+Processing by CartsController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mCart Load (0.1ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1[0m  [["id", "31"]]
+  [1m[35mLineItem Load (0.2ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = 31
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = 12 ORDER BY title LIMIT 1[0m
+  Rendered carts/show.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/depot.css?body=1" for 127.0.0.1 at Fri Aug 31 16:25:09 -0300 2012
+Served asset /depot.css - 304 Not Modified (0ms)
+
+
+Started GET "/carts/31" for 127.0.0.1 at Fri Aug 31 16:25:50 -0300 2012
+Processing by CartsController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[35mCart Load (0.1ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1  [["id", "31"]]
+  [1m[36mLineItem Load (0.2ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = 31[0m
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = 12 ORDER BY title LIMIT 1
+  Rendered carts/show.html.erb within layouts/application (5.9ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (undefined method `line_item' for #<Cart:0x10fb66e70>):
+    16: 			<td class="item_price"><%= number_to_currency(item.total_price) %></td>
+    17: 			
+    18: 			<!-- remove item from cart -->
+    19: 			<td><%= button_to 'Remove Item', @cart.line_item, :method => :destroy, 
+    20: 				:confirm => 'Are you sure?' %></td>
+    21: 			
+    22: 		</tr>
+  app/views/carts/show.html.erb:19:in `_app_views_carts_show_html_erb___1037359562_2279282920'
+  app/views/carts/show.html.erb:12:in `_app_views_carts_show_html_erb___1037359562_2279282920'
+  app/controllers/carts_controller.rb:23:in `show'
+
+
+  Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (17.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Aug 31 16:25:54 -0300 2012
+Processing by StoreController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY title[0m
+  Rendered store/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/depot.css?body=1" for 127.0.0.1 at Fri Aug 31 16:25:54 -0300 2012
+Served asset /depot.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Aug 31 16:25:57 -0300 2012
+Processing by StoreController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" ORDER BY title
+  Rendered store/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 16ms (Views: 15.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/depot.css?body=1" for 127.0.0.1 at Fri Aug 31 16:25:57 -0300 2012
+Served asset /depot.css - 304 Not Modified (0ms)
+
+
+Started POST "/line_items?product_id=11" for 127.0.0.1 at Fri Aug 31 16:25:58 -0300 2012
+Processing by LineItemsController#create as HTML
+  Parameters: {"product_id"=>"11", "authenticity_token"=>"10DIUgkZSeluD3qQ5qsjivxyZzhxnLb+6Mc/A/gxoAo="}
+  [1m[36mCart Load (0.1ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1[0m  [["id", 31]]
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? ORDER BY title LIMIT 1  [["id", "11"]]
+  [1m[36mLineItem Load (0.2ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = 31 AND "line_items"."product_id" = 11 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["cart_id", 31], ["created_at", Fri, 31 Aug 2012 19:25:58 UTC +00:00], ["product_id", 11], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 19:25:58 UTC +00:00]]
+  [1m[35m (50.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36mCart Load (0.2ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = 31 LIMIT 1[0m
+Redirected to http://localhost:3000/carts/31
+Completed 302 Found in 61ms (ActiveRecord: 52.0ms)
+
+
+Started GET "/carts/31" for 127.0.0.1 at Fri Aug 31 16:25:58 -0300 2012
+Processing by CartsController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[35mCart Load (0.1ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1  [["id", "31"]]
+  [1m[36mLineItem Load (0.1ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = 31[0m
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = 12 ORDER BY title LIMIT 1
+  Rendered carts/show.html.erb within layouts/application (4.4ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (undefined method `line_item' for #<Cart:0x10fe0f5c8>):
+    16: 			<td class="item_price"><%= number_to_currency(item.total_price) %></td>
+    17: 			
+    18: 			<!-- remove item from cart -->
+    19: 			<td><%= button_to 'Remove Item', @cart.line_item, :method => :destroy, 
+    20: 				:confirm => 'Are you sure?' %></td>
+    21: 			
+    22: 		</tr>
+  app/views/carts/show.html.erb:19:in `_app_views_carts_show_html_erb___1037359562_2279282920'
+  app/views/carts/show.html.erb:12:in `_app_views_carts_show_html_erb___1037359562_2279282920'
+  app/controllers/carts_controller.rb:23:in `show'
+
+
+  Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.3ms)
+
+
+Started POST "/line_items?product_id=11" for 127.0.0.1 at Fri Aug 31 16:38:08 -0300 2012
+Processing by LineItemsController#create as HTML
+  Parameters: {"product_id"=>"11", "authenticity_token"=>"10DIUgkZSeluD3qQ5qsjivxyZzhxnLb+6Mc/A/gxoAo="}
+  [1m[36mCart Load (0.1ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1[0m  [["id", 31]]
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? ORDER BY title LIMIT 1  [["id", "11"]]
+  [1m[36mLineItem Load (0.1ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = 31 AND "line_items"."product_id" = 11 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mUPDATE "line_items" SET "updated_at" = '2012-08-31 19:38:08.561289', "quantity" = 2 WHERE "line_items"."id" = 251[0m
+  [1m[35m (50.9ms)[0m  commit transaction
+  [1m[36mCart Load (0.2ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = 31 LIMIT 1[0m
+Redirected to http://localhost:3000/carts/31
+Completed 302 Found in 132ms (ActiveRecord: 52.8ms)
+
+
+Started GET "/carts/31" for 127.0.0.1 at Fri Aug 31 16:38:08 -0300 2012
+Processing by CartsController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[35mCart Load (0.1ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1  [["id", "31"]]
+  [1m[36mLineItem Load (0.2ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = 31[0m
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = 12 ORDER BY title LIMIT 1
+  Rendered carts/show.html.erb within layouts/application (12.5ms)
+Completed 500 Internal Server Error in 16ms
+
+ActionView::Template::Error (undefined local variable or method `product' for #<#<Class:0x10ff3ea20>:0x10ff298c8>):
+    16: 			<td class="item_price"><%= number_to_currency(item.total_price) %></td>
+    17: 			
+    18: 			<!-- remove item from cart -->
+    19: 			<td><%= button_to 'Remove Item', line_items_path(:product_id => product),
+    20: 				:confirm => 'Are you sure?' %></td>
+    21: 			
+    22: 		</tr>
+  app/views/carts/show.html.erb:19:in `_app_views_carts_show_html_erb___1037359562_2281255200'
+  app/views/carts/show.html.erb:12:in `_app_views_carts_show_html_erb___1037359562_2281255200'
+  app/controllers/carts_controller.rb:23:in `show'
+
+
+  Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.6ms)
+
+
+Started GET "/carts/31" for 127.0.0.1 at Fri Aug 31 16:41:19 -0300 2012
+Processing by CartsController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mCart Load (0.1ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1[0m  [["id", "31"]]
+  [1m[35mLineItem Load (0.2ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = 31
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = 12 ORDER BY title LIMIT 1[0m
+  Rendered carts/show.html.erb within layouts/application (87.9ms)
+Completed 500 Internal Server Error in 92ms
+
+ActionView::Template::Error (undefined method `line_item_line_item_path' for #<#<Class:0x10ff3ea20>:0x10fbef950>):
+    16: 			<td class="item_price"><%= number_to_currency(item.total_price) %></td>
+    17: 			
+    18: 			<!-- remove item from cart -->
+    19: 			<td><%= button_to 'Remove Item', @cart.line_items, :method => :destroy,
+    20: 				:confirm => 'Are you sure?' %></td>
+    21: 			
+    22: 		</tr>
+  app/views/carts/show.html.erb:19:in `_app_views_carts_show_html_erb___1037359562_2279566920'
+  app/views/carts/show.html.erb:12:in `_app_views_carts_show_html_erb___1037359562_2279566920'
+  app/controllers/carts_controller.rb:23:in `show'
+
+
+  Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.6ms)
+
+
+Started GET "/carts/31" for 127.0.0.1 at Fri Aug 31 16:42:15 -0300 2012
+Processing by CartsController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[35mCart Load (0.2ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1  [["id", "31"]]
+  [1m[36mLineItem Load (0.2ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = 31[0m
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = 12 ORDER BY title LIMIT 1
+  Rendered carts/show.html.erb within layouts/application (4.9ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (undefined method `line_item' for #<Cart:0x11002d6e8>):
+    16: 			<td class="item_price"><%= number_to_currency(item.total_price) %></td>
+    17: 			
+    18: 			<!-- remove item from cart -->
+    19: 			<td><%= button_to 'Remove Item', @cart.line_item, :method => :destroy,
+    20: 				:confirm => 'Are you sure?' %></td>
+    21: 			
+    22: 		</tr>
+  app/views/carts/show.html.erb:19:in `_app_views_carts_show_html_erb___1037359562_2281777120'
+  app/views/carts/show.html.erb:12:in `_app_views_carts_show_html_erb___1037359562_2281777120'
+  app/controllers/carts_controller.rb:23:in `show'
+
+
+  Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /opt/local/lib/ruby/gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.1ms)
+
+
+Started GET "/carts/31" for 127.0.0.1 at Fri Aug 31 16:48:39 -0300 2012
+Processing by CartsController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mCart Load (0.2ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1[0m  [["id", "31"]]
+  [1m[35mLineItem Load (0.1ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = 31
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = 12 ORDER BY title LIMIT 1[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = 11 ORDER BY title LIMIT 1
+  Rendered carts/show.html.erb within layouts/application (73.8ms)
+Completed 200 OK in 87ms (Views: 80.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Fri Aug 31 16:48:39 -0300 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/carts.css?body=1" for 127.0.0.1 at Fri Aug 31 16:48:39 -0300 2012
+Served asset /carts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/depot.css?body=1" for 127.0.0.1 at Fri Aug 31 16:48:39 -0300 2012
+Served asset /depot.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/line_items.css?body=1" for 127.0.0.1 at Fri Aug 31 16:48:39 -0300 2012
+Served asset /line_items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at Fri Aug 31 16:48:39 -0300 2012
+Served asset /products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Fri Aug 31 16:48:39 -0300 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/store.css?body=1" for 127.0.0.1 at Fri Aug 31 16:48:39 -0300 2012
+Served asset /store.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Fri Aug 31 16:48:39 -0300 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri Aug 31 16:48:39 -0300 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/carts.js?body=1" for 127.0.0.1 at Fri Aug 31 16:48:39 -0300 2012
+Served asset /carts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/line_items.js?body=1" for 127.0.0.1 at Fri Aug 31 16:48:39 -0300 2012
+Served asset /line_items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at Fri Aug 31 16:48:39 -0300 2012
+Served asset /products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/store.js?body=1" for 127.0.0.1 at Fri Aug 31 16:48:39 -0300 2012
+Served asset /store.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Fri Aug 31 16:48:39 -0300 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at Fri Aug 31 16:48:39 -0300 2012
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started DELETE "/line_items/250" for 127.0.0.1 at Fri Aug 31 16:48:43 -0300 2012
+Processing by LineItemsController#destroy as HTML
+  Parameters: {"id"=>"250", "authenticity_token"=>"10DIUgkZSeluD3qQ5qsjivxyZzhxnLb+6Mc/A/gxoAo="}
+  [1m[36mLineItem Load (0.2ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE "line_items"."id" = ? LIMIT 1[0m  [["id", "250"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "line_items" WHERE "line_items"."id" = ?[0m  [["id", 250]]
+  [1m[35m (56.0ms)[0m  commit transaction
+  [1m[36mCart Load (0.1ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1[0m  [["id", 31]]
+Redirected to http://localhost:3000/carts/31
+Completed 302 Found in 61ms (ActiveRecord: 56.8ms)
+
+
+Started GET "/carts/31" for 127.0.0.1 at Fri Aug 31 16:48:43 -0300 2012
+Processing by CartsController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[35mCart Load (0.1ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1  [["id", "31"]]
+  [1m[36mLineItem Load (0.1ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = 31[0m
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = 11 ORDER BY title LIMIT 1
+  Rendered carts/show.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 13ms (Views: 11.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Fri Aug 31 16:48:43 -0300 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/line_items.css?body=1" for 127.0.0.1 at Fri Aug 31 16:48:43 -0300 2012
+Served asset /line_items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/carts.css?body=1" for 127.0.0.1 at Fri Aug 31 16:48:43 -0300 2012
+Served asset /carts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/depot.css?body=1" for 127.0.0.1 at Fri Aug 31 16:48:43 -0300 2012
+Served asset /depot.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Fri Aug 31 16:48:43 -0300 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at Fri Aug 31 16:48:43 -0300 2012
+Served asset /products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/store.css?body=1" for 127.0.0.1 at Fri Aug 31 16:48:43 -0300 2012
+Served asset /store.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Fri Aug 31 16:48:43 -0300 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri Aug 31 16:48:43 -0300 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/carts.js?body=1" for 127.0.0.1 at Fri Aug 31 16:48:43 -0300 2012
+Served asset /carts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/line_items.js?body=1" for 127.0.0.1 at Fri Aug 31 16:48:43 -0300 2012
+Served asset /line_items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at Fri Aug 31 16:48:43 -0300 2012
+Served asset /products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/store.js?body=1" for 127.0.0.1 at Fri Aug 31 16:48:43 -0300 2012
+Served asset /store.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Fri Aug 31 16:48:43 -0300 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at Fri Aug 31 16:48:43 -0300 2012
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started DELETE "/line_items/251" for 127.0.0.1 at Fri Aug 31 16:48:46 -0300 2012
+Processing by LineItemsController#destroy as HTML
+  Parameters: {"id"=>"251", "authenticity_token"=>"10DIUgkZSeluD3qQ5qsjivxyZzhxnLb+6Mc/A/gxoAo="}
+  [1m[36mLineItem Load (0.1ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE "line_items"."id" = ? LIMIT 1[0m  [["id", "251"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "line_items" WHERE "line_items"."id" = ?[0m  [["id", 251]]
+  [1m[35m (52.1ms)[0m  commit transaction
+  [1m[36mCart Load (0.2ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1[0m  [["id", 31]]
+Redirected to http://localhost:3000/carts/31
+Completed 302 Found in 57ms (ActiveRecord: 52.6ms)
+
+
+Started GET "/carts/31" for 127.0.0.1 at Fri Aug 31 16:48:46 -0300 2012
+Processing by CartsController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[35mCart Load (0.1ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1  [["id", "31"]]
+  [1m[36mLineItem Load (0.1ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = 31[0m
+  Rendered carts/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Fri Aug 31 16:48:46 -0300 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/depot.css?body=1" for 127.0.0.1 at Fri Aug 31 16:48:46 -0300 2012
+Served asset /depot.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/carts.css?body=1" for 127.0.0.1 at Fri Aug 31 16:48:46 -0300 2012
+Served asset /carts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Fri Aug 31 16:48:46 -0300 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at Fri Aug 31 16:48:46 -0300 2012
+Served asset /products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/line_items.css?body=1" for 127.0.0.1 at Fri Aug 31 16:48:46 -0300 2012
+Served asset /line_items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/store.css?body=1" for 127.0.0.1 at Fri Aug 31 16:48:46 -0300 2012
+Served asset /store.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Fri Aug 31 16:48:46 -0300 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri Aug 31 16:48:46 -0300 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/carts.js?body=1" for 127.0.0.1 at Fri Aug 31 16:48:46 -0300 2012
+Served asset /carts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/line_items.js?body=1" for 127.0.0.1 at Fri Aug 31 16:48:46 -0300 2012
+Served asset /line_items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at Fri Aug 31 16:48:46 -0300 2012
+Served asset /products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/store.js?body=1" for 127.0.0.1 at Fri Aug 31 16:48:46 -0300 2012
+Served asset /store.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Fri Aug 31 16:48:46 -0300 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at Fri Aug 31 16:48:46 -0300 2012
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Aug 31 16:48:50 -0300 2012
+Processing by StoreController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" ORDER BY title
+  Rendered store/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 15ms (Views: 13.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Fri Aug 31 16:48:50 -0300 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/carts.css?body=1" for 127.0.0.1 at Fri Aug 31 16:48:50 -0300 2012
+Served asset /carts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/depot.css?body=1" for 127.0.0.1 at Fri Aug 31 16:48:50 -0300 2012
+Served asset /depot.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Fri Aug 31 16:48:50 -0300 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at Fri Aug 31 16:48:50 -0300 2012
+Served asset /products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/line_items.css?body=1" for 127.0.0.1 at Fri Aug 31 16:48:50 -0300 2012
+Served asset /line_items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/store.css?body=1" for 127.0.0.1 at Fri Aug 31 16:48:50 -0300 2012
+Served asset /store.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Fri Aug 31 16:48:50 -0300 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri Aug 31 16:48:50 -0300 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/carts.js?body=1" for 127.0.0.1 at Fri Aug 31 16:48:50 -0300 2012
+Served asset /carts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/line_items.js?body=1" for 127.0.0.1 at Fri Aug 31 16:48:50 -0300 2012
+Served asset /line_items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at Fri Aug 31 16:48:50 -0300 2012
+Served asset /products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/store.js?body=1" for 127.0.0.1 at Fri Aug 31 16:48:50 -0300 2012
+Served asset /store.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Fri Aug 31 16:48:50 -0300 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at Fri Aug 31 16:48:50 -0300 2012
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started POST "/line_items?product_id=11" for 127.0.0.1 at Fri Aug 31 16:48:52 -0300 2012
+Processing by LineItemsController#create as HTML
+  Parameters: {"product_id"=>"11", "authenticity_token"=>"10DIUgkZSeluD3qQ5qsjivxyZzhxnLb+6Mc/A/gxoAo="}
+  [1m[36mCart Load (0.2ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1[0m  [["id", 31]]
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? ORDER BY title LIMIT 1  [["id", "11"]]
+  [1m[36mLineItem Load (0.2ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = 31 AND "line_items"."product_id" = 11 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "line_items" ("cart_id", "created_at", "product_id", "quantity", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["cart_id", 31], ["created_at", Fri, 31 Aug 2012 19:48:52 UTC +00:00], ["product_id", 11], ["quantity", 1], ["updated_at", Fri, 31 Aug 2012 19:48:52 UTC +00:00]]
+  [1m[35m (58.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36mCart Load (0.2ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = 31 LIMIT 1[0m
+Redirected to http://localhost:3000/carts/31
+Completed 302 Found in 73ms (ActiveRecord: 60.2ms)
+
+
+Started GET "/carts/31" for 127.0.0.1 at Fri Aug 31 16:48:52 -0300 2012
+Processing by CartsController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[35mCart Load (0.1ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1  [["id", "31"]]
+  [1m[36mLineItem Load (0.2ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = 31[0m
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = 11 ORDER BY title LIMIT 1
+  Rendered carts/show.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 13ms (Views: 11.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Fri Aug 31 16:48:52 -0300 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/depot.css?body=1" for 127.0.0.1 at Fri Aug 31 16:48:52 -0300 2012
+Served asset /depot.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/carts.css?body=1" for 127.0.0.1 at Fri Aug 31 16:48:52 -0300 2012
+Served asset /carts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at Fri Aug 31 16:48:52 -0300 2012
+Served asset /products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/line_items.css?body=1" for 127.0.0.1 at Fri Aug 31 16:48:52 -0300 2012
+Served asset /line_items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Fri Aug 31 16:48:52 -0300 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/store.css?body=1" for 127.0.0.1 at Fri Aug 31 16:48:52 -0300 2012
+Served asset /store.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Fri Aug 31 16:48:52 -0300 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri Aug 31 16:48:52 -0300 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/carts.js?body=1" for 127.0.0.1 at Fri Aug 31 16:48:52 -0300 2012
+Served asset /carts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/line_items.js?body=1" for 127.0.0.1 at Fri Aug 31 16:48:52 -0300 2012
+Served asset /line_items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at Fri Aug 31 16:48:52 -0300 2012
+Served asset /products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/store.js?body=1" for 127.0.0.1 at Fri Aug 31 16:48:52 -0300 2012
+Served asset /store.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Fri Aug 31 16:48:52 -0300 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at Fri Aug 31 16:48:52 -0300 2012
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Aug 31 16:48:55 -0300 2012
+Processing by StoreController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY title[0m
+  Rendered store/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 16ms (Views: 14.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Fri Aug 31 16:48:55 -0300 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/carts.css?body=1" for 127.0.0.1 at Fri Aug 31 16:48:55 -0300 2012
+Served asset /carts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/depot.css?body=1" for 127.0.0.1 at Fri Aug 31 16:48:55 -0300 2012
+Served asset /depot.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Fri Aug 31 16:48:55 -0300 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at Fri Aug 31 16:48:55 -0300 2012
+Served asset /products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/line_items.css?body=1" for 127.0.0.1 at Fri Aug 31 16:48:55 -0300 2012
+Served asset /line_items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/store.css?body=1" for 127.0.0.1 at Fri Aug 31 16:48:55 -0300 2012
+Served asset /store.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Fri Aug 31 16:48:55 -0300 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri Aug 31 16:48:55 -0300 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/carts.js?body=1" for 127.0.0.1 at Fri Aug 31 16:48:55 -0300 2012
+Served asset /carts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/line_items.js?body=1" for 127.0.0.1 at Fri Aug 31 16:48:55 -0300 2012
+Served asset /line_items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at Fri Aug 31 16:48:55 -0300 2012
+Served asset /products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/store.js?body=1" for 127.0.0.1 at Fri Aug 31 16:48:55 -0300 2012
+Served asset /store.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Fri Aug 31 16:48:55 -0300 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at Fri Aug 31 16:48:55 -0300 2012
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started POST "/line_items?product_id=11" for 127.0.0.1 at Fri Aug 31 16:48:57 -0300 2012
+Processing by LineItemsController#create as HTML
+  Parameters: {"product_id"=>"11", "authenticity_token"=>"10DIUgkZSeluD3qQ5qsjivxyZzhxnLb+6Mc/A/gxoAo="}
+  [1m[35mCart Load (0.2ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1  [["id", 31]]
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? ORDER BY title LIMIT 1[0m  [["id", "11"]]
+  [1m[35mLineItem Load (0.2ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = 31 AND "line_items"."product_id" = 11 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  UPDATE "line_items" SET "updated_at" = '2012-08-31 19:48:57.161293', "quantity" = 2 WHERE "line_items"."id" = 252
+  [1m[36m (55.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mCart Load (0.2ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = 31 LIMIT 1
+Redirected to http://localhost:3000/carts/31
+Completed 302 Found in 66ms (ActiveRecord: 56.1ms)
+
+
+Started GET "/carts/31" for 127.0.0.1 at Fri Aug 31 16:48:57 -0300 2012
+Processing by CartsController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mCart Load (0.1ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1[0m  [["id", "31"]]
+  [1m[35mLineItem Load (0.2ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = 31
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = 11 ORDER BY title LIMIT 1[0m
+  Rendered carts/show.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Fri Aug 31 16:48:57 -0300 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/depot.css?body=1" for 127.0.0.1 at Fri Aug 31 16:48:57 -0300 2012
+Served asset /depot.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/carts.css?body=1" for 127.0.0.1 at Fri Aug 31 16:48:57 -0300 2012
+Served asset /carts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at Fri Aug 31 16:48:57 -0300 2012
+Served asset /products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/line_items.css?body=1" for 127.0.0.1 at Fri Aug 31 16:48:57 -0300 2012
+Served asset /line_items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Fri Aug 31 16:48:57 -0300 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/store.css?body=1" for 127.0.0.1 at Fri Aug 31 16:48:57 -0300 2012
+Served asset /store.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Fri Aug 31 16:48:57 -0300 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri Aug 31 16:48:57 -0300 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/carts.js?body=1" for 127.0.0.1 at Fri Aug 31 16:48:57 -0300 2012
+Served asset /carts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/line_items.js?body=1" for 127.0.0.1 at Fri Aug 31 16:48:57 -0300 2012
+Served asset /line_items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at Fri Aug 31 16:48:57 -0300 2012
+Served asset /products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/store.js?body=1" for 127.0.0.1 at Fri Aug 31 16:48:57 -0300 2012
+Served asset /store.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Fri Aug 31 16:48:57 -0300 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at Fri Aug 31 16:48:57 -0300 2012
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started DELETE "/line_items/252" for 127.0.0.1 at Fri Aug 31 16:48:59 -0300 2012
+Processing by LineItemsController#destroy as HTML
+  Parameters: {"id"=>"252", "authenticity_token"=>"10DIUgkZSeluD3qQ5qsjivxyZzhxnLb+6Mc/A/gxoAo="}
+  [1m[35mLineItem Load (0.1ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."id" = ? LIMIT 1  [["id", "252"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "line_items" WHERE "line_items"."id" = ?  [["id", 252]]
+  [1m[36m (53.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mCart Load (0.2ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1  [["id", 31]]
+Redirected to http://localhost:3000/carts/31
+Completed 302 Found in 59ms (ActiveRecord: 54.4ms)
+
+
+Started GET "/carts/31" for 127.0.0.1 at Fri Aug 31 16:48:59 -0300 2012
+Processing by CartsController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mCart Load (0.1ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1[0m  [["id", "31"]]
+  [1m[35mLineItem Load (0.1ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = 31
+  Rendered carts/show.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Fri Aug 31 16:48:59 -0300 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/depot.css?body=1" for 127.0.0.1 at Fri Aug 31 16:48:59 -0300 2012
+Served asset /depot.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/line_items.css?body=1" for 127.0.0.1 at Fri Aug 31 16:48:59 -0300 2012
+Served asset /line_items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/carts.css?body=1" for 127.0.0.1 at Fri Aug 31 16:48:59 -0300 2012
+Served asset /carts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Fri Aug 31 16:48:59 -0300 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at Fri Aug 31 16:48:59 -0300 2012
+Served asset /products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/store.css?body=1" for 127.0.0.1 at Fri Aug 31 16:48:59 -0300 2012
+Served asset /store.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Fri Aug 31 16:48:59 -0300 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri Aug 31 16:48:59 -0300 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/carts.js?body=1" for 127.0.0.1 at Fri Aug 31 16:48:59 -0300 2012
+Served asset /carts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/line_items.js?body=1" for 127.0.0.1 at Fri Aug 31 16:48:59 -0300 2012
+Served asset /line_items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at Fri Aug 31 16:48:59 -0300 2012
+Served asset /products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/store.js?body=1" for 127.0.0.1 at Fri Aug 31 16:48:59 -0300 2012
+Served asset /store.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Fri Aug 31 16:48:59 -0300 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at Fri Aug 31 16:48:59 -0300 2012
+Served asset /logo.png - 304 Not Modified (0ms)

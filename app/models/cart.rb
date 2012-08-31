@@ -15,6 +15,17 @@ class Cart < ActiveRecord::Base
     current_item
   end
   
+  # If more than one of product is in the cart, increment the line_item quantity by 1
+  def remove_product(product_id)
+    current_item = line_items.where(:product_id => product_id).first
+    if current_item.quantity > 1
+      current_item.quantity -= 1
+   # Otherwise remove the line_item
+    else
+      current_item.destroy
+    end
+  end
+  
   # total price of all products in cart
   def total_price
     line_items.to_a.sum { |item| item.total_price }
