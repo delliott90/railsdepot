@@ -3,7 +3,10 @@
 <% end %>
 
 <h1>Your Pragmatic Catalog</h1>
-<p>You have visited the store <%= @sessioncnt %> times.</p>
+
+	<p>You have visited the store  <%= pluralize(@count, 'time') %> </p>
+
+
 <% @products.each do |product| %>
 	<div class="entry">
 		<!-- <%= image_tag(product.image_url) %> -->
