@@ -5,6 +5,7 @@ class StoreController < ApplicationController
   def index
     @products = Product.all
     @count = sessioncount
+    @cart = current_cart
   
   end
   

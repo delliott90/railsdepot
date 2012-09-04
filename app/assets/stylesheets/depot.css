@@ -28,8 +28,8 @@
 }
 
 #product_list .list_image {
-  width:        60px; /* 60 */
-  height:       70px; /* 70 */
+  width:        60px;
+  height:       70px;
 }
 
 #product_list .list_description {
@@ -129,22 +129,26 @@
 
 #columns {
 	background: #141;
+	
 }
 
 #main {
 	margin-left: 13em;
 	padding-top: 4ex;
-	padding-left: 2em;
+	padding-left: 8em;
 	background: white;
+	
 }
 
 #side {
 	float: left;
 	padding-top: 1em;
 	padding-left: 1em;
+	padding-right: 1em;
 	padding-bottom: 1em;
-	width: 12em;
+	width: 18em; /* 12 */
 	background: #141;
+	height: 100em;
 }
 
 #side a {
@@ -167,11 +171,25 @@
 	font: 120% bold;
 }
 
-#store .item_price, #store .total_lime {
+#store .item_price, #store .total_line {
 	text-align: right;
 }
 
 #store .total_line .total_cell {
 	font-weight: bold;
 	border-top: 1px solid #595;
+}
+
+/* styles for the cart in the side bar */
+#cart, #cart table {
+	font-size: smaller;
+	color: white;
+}
+
+
+#cart table {
+	border-top: 1px dotted #595;
+	border-bottom: 1px dotted #595;
+	margin-bottom: 10px;
+	
 }
