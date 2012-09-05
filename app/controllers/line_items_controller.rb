@@ -16,6 +16,8 @@
 #---
 class LineItemsController < ApplicationController
   
+
+  
   # GET /line_items
   # GET /line_items.xml
   def index
@@ -94,8 +96,21 @@ class LineItemsController < ApplicationController
   # DELETE /line_items/1
   # DELETE /line_items/1.xml
   def destroy
-    @line_item = LineItem.find(params[:id])
-    @line_item.destroy
+    Rails.logger = Logger.new(STDOUT)
+    line_item = LineItem.find(params[:id])
+      @quantity = 16
+    # @line_item.destroy
+    logger.info "QUANTITY =  #{line_item.quantity}"
+    logger.info "ANOTHER QUANTITY = #{@quantity}"
+   if line_item.quantity > 1
+     line_item.quantity -= 1
+      #@line_item.quantity -= 1
+    end
+   # Otherwise remove the line_item
+   # else
+      # @line_item.destroy
+   # end
+
 
     respond_to do |format|
       format.html { redirect_to(store_url) }
