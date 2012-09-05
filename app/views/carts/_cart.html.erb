@@ -3,7 +3,9 @@
 
 
 <div class="cart_title">Your Cart</div>
+
 <table>
+	<tr><td width=300 %>&nbsp;</td></tr>
 	<!-- calls line_item partial -->
 	<%= render(cart.line_items) %> 
 	
@@ -19,4 +21,6 @@
 
 
 <%= button_to 'Empty cart', cart, :method => :delete, :confirm => 'Are you sure?' %>
+<br />
+
 

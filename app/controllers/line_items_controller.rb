@@ -15,11 +15,12 @@
 # Visit http://www.pragmaticprogrammer.com/titles/rails4 for more book information.
 #---
 class LineItemsController < ApplicationController
+  
   # GET /line_items
   # GET /line_items.xml
   def index
     @line_items = LineItem.all
-
+    
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @line_items }
@@ -30,7 +31,7 @@ class LineItemsController < ApplicationController
   # GET /line_items/1.xml
   def show
     @line_item = LineItem.find(params[:id])
-
+    puts "\n HERE BE SOME TEXT \n"
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @line_item }
@@ -41,7 +42,7 @@ class LineItemsController < ApplicationController
   # GET /line_items/new.xml
   def new
     @line_item = LineItem.new
-
+  
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @line_item }
@@ -63,7 +64,7 @@ class LineItemsController < ApplicationController
 
     respond_to do |format|
       if @line_item.save
-        # session[:counter] = 0 # reset the number of store visits
+        session[:counter] = 0 # reset the number of store visits
         format.html { redirect_to(store_url) }
         format.js { @current_item = @line_item }
         format.json  { render :json => @line_item, :status => :created, :location => @line_item }
@@ -97,9 +98,23 @@ class LineItemsController < ApplicationController
     @line_item.destroy
 
     respond_to do |format|
-      format.html { redirect_to(current_cart) }
+      format.html { redirect_to(store_url) }
       format.xml  { head :ok }
     end
   end
+  
+  
+    # DELETE /line_items/1
+  # DELETE /line_items/1.xml
+  def testy
+    puts "\n TESTY \n"
+   # @cart = current_cart
+   # product = Product.find(params[:product_id])
+   # @cart.remove_product(product.id)
+   format.html { redirect_to(store_url) }
+  end
+
+  
+
   
 end
