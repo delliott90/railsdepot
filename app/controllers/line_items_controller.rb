@@ -103,22 +103,11 @@ class LineItemsController < ApplicationController
     @cart.remove_product(@line_item)
     
     # logger.info "QUANTITY =  #{@line_item.quantity}"
-   
-   
-   respond_to do |format|
-          
-        format.html { redirect_to(store_url) }
-        format.js
-        format.json  { render :json => @line_item, :status => :created, :location => @line_item }
-      
-      end
-   
     
-   # respond_to do |format|
-    #  format.html { redirect_to(store_url) }
-      
-     # format.xml  { head :ok }
-    #end
+    respond_to do |format|
+      format.html { redirect_to(store_url) }  
+      format.xml  { head :ok }
+    end
   end
   
   
