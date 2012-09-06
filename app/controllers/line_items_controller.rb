@@ -81,7 +81,7 @@ class LineItemsController < ApplicationController
   # PUT /line_items/1.xml
   def update
     @line_item = LineItem.find(params[:id])
-
+    
     respond_to do |format|
       if @line_item.update_attributes(params[:line_item])
         format.html { redirect_to(@line_item, :notice => 'Line item was successfully updated.') }
@@ -96,38 +96,32 @@ class LineItemsController < ApplicationController
   # DELETE /line_items/1
   # DELETE /line_items/1.xml
   def destroy
-    Rails.logger = Logger.new(STDOUT)
-    line_item = LineItem.find(params[:id])
-      @quantity = 16
-    # @line_item.destroy
-    logger.info "QUANTITY =  #{line_item.quantity}"
-    logger.info "ANOTHER QUANTITY = #{@quantity}"
-   if line_item.quantity > 1
-     line_item.quantity -= 1
-      #@line_item.quantity -= 1
-    end
-   # Otherwise remove the line_item
-   # else
-      # @line_item.destroy
-   # end
-
-
-    respond_to do |format|
-      format.html { redirect_to(store_url) }
-      format.xml  { head :ok }
-    end
+    
+    # Rails.logger = Logger.new(STDOUT)
+    @cart = current_cart
+    @line_item = LineItem.find(params[:id])
+    @cart.remove_product(@line_item)
+    
+    # logger.info "QUANTITY =  #{@line_item.quantity}"
+   
+   
+   respond_to do |format|
+          
+        format.html { redirect_to(store_url) }
+        format.js
+        format.json  { render :json => @line_item, :status => :created, :location => @line_item }
+      
+      end
+   
+    
+   # respond_to do |format|
+    #  format.html { redirect_to(store_url) }
+      
+     # format.xml  { head :ok }
+    #end
   end
   
   
-    # DELETE /line_items/1
-  # DELETE /line_items/1.xml
-  def testy
-    puts "\n TESTY \n"
-   # @cart = current_cart
-   # product = Product.find(params[:product_id])
-   # @cart.remove_product(product.id)
-   format.html { redirect_to(store_url) }
-  end
 
   
 
